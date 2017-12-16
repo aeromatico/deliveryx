@@ -1,0 +1,36 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.order-slider {
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	padding-bottom: 25%;
+}
+
+.order-slider h3 {
+	color: #fff;
+}
+
+body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+
