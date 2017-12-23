@@ -6,4 +6,9 @@ angular.module('app.services', [])
 
 .service('BlankService', [function(){
 
-}]);
+}])
+
+.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.tabs.position('bottom');
+});
+

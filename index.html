@@ -53,6 +53,10 @@
     
     <script src="js/directives.js"></script>
     <script src="js/services.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+    <script src="js/angular-simple-logger.js"></script>
+    <script src="js/angular-google-maps.min.js"></script>
+    <script src="js/googlemaps.init.js"></script>
 
     <!-- Only required for Tab projects w/ pages in multiple tabs 
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
@@ -77,11 +81,13 @@
       </ion-header-bar>
       <ion-content ng-controller="deliveryXCtrl" padding="false" class="side-menu-left has-header ">
         <ion-list id="deliveryX-list1" data-componentid="list1">
-          <ion-item class="item-icon-left" id="deliveryX-list-item1" data-componentid="list-item1">
+          <ion-item class="item-icon-left" id="deliveryX-list-item1" ui-sref="tabsController.hasTuPedido()" menu-close="" data-componentid="list-item1">
+            <i class="icon ion-ios-cart"></i>Mis pedidos</ion-item>
+          <ion-item class="item-icon-left" id="deliveryX-list-item27" ui-sref="seguirPedido()" menu-close="" data-componentid="list-item27">
             <i class="icon ion-android-pin"></i>Monitor </ion-item>
           <ion-item class="item-icon-left" id="deliveryX-list-item2" data-componentid="list-item2">
             <i class="icon ion-chatbox-working"></i>Chats</ion-item>
-          <ion-item class="item-icon-left" id="deliveryX-list-item3" data-componentid="list-item3">
+          <ion-item class="item-icon-left" id="deliveryX-list-item3" ui-sref="misPedidos()" menu-close="" data-componentid="list-item3">
             <i class="icon ion-android-time"></i>Historial</ion-item>
         </ion-list>
         <div class="spacer" data-componentid="spacer1" style="width: 268px; height: 38px;"></div>
