@@ -70,10 +70,12 @@ function ($scope, $stateParams) {
                 mapTypeControl: false,
                 scaleControl: false,
                 rotateControl: false,
-                zoomControl: false
+                zoomControl: false,
+                draggable: true,
             }, 
             showTraficLayer:true
         };
+        
     });
 }])
    
